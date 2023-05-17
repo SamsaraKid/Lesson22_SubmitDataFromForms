@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lesson20</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="js/main.js" defer></script>
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+
+
+    <form action="" id="form1">
+        <fieldset>
+            <legend>Анкета кота</legend>
+
+            <label>
+                <span>Имя кота</span>
+                <input type="text" required name="catname" placeholder="Барсик">
+            </label>
+
+            <label>
+                <span>Возраст кота</span>
+                <input type="number" min="0" max="99" required name="catage" placeholder="10">
+            </label>
+
+            <label>
+                <span>Кот дерёт обои?</span>
+                <input type="checkbox" name="oboi">
+            </label>
+
+            <label>
+                <span>Кот приучен к лотку?</span>
+                <input type="checkbox" name="lotok">
+            </label>
+
+
+            <fieldset>
+                <legend>Любимая еда:</legend>
+                <label>
+                    <span>Суп</span>
+                    <input type="radio" name="food" checked value="soup">
+                </label>
+                <label>
+                    <span>Корм</span>
+                    <input type="radio" name="food" value="korm">
+                </label>
+                <label>
+                    <span>Макароны</span>
+                    <input type="radio" name="food" value="makaroni">
+                </label>
+            </fieldset>
+
+            <label>
+                <span>Цвет кота</span>
+                <input type="color" name="color">
+            </label>
+
+            <label>
+                <span>Приз</span>
+                <select name="priz">
+                    <option value="1">Подушка</option>
+                    <option value="2">Игрушка</option>
+                    <option value="3">Консервы</option>
+                    <option value="4">Грамота</option>
+                </select>
+            </label>
+
+
+
+
+            <input type="submit" value="Отправить" id="but1">
+
+
+        </fieldset>
+
+
+
+    </form>
+
+
+</body>
+</html>
